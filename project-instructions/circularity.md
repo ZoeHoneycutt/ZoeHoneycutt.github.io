@@ -478,7 +478,7 @@ Understanding these properties will help you create conditions to keep circles o
      - **Left Boundary**: Move circles from the left edge to the right.
      - **Top Boundary**: Move circles from the top edge to the bottom.
      - **Bottom Boundary**: Move circles from the bottom edge to the top.
-
+4
 3. **Guided Hints for Each Condition**
 
    - **Left Boundary**:  
