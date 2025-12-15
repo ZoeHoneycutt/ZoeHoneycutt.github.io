@@ -96,13 +96,16 @@ var init = function (window) {
         Function. If that circle drifts off the screen, this Function should move
         it to the opposite side of the screen.
         */
-        game.checkCirclePosition = function(circle) {
+       
 
             // if the circle has gone past the RIGHT side of the screen then place it on the LEFT
            
-
+            game.checkCirclePosition = function(circle) {
             
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
+            
+            
+            
             if (circle.y > canvas.height) {
                 circle.y = 0; 
             }
@@ -125,7 +128,7 @@ var init = function (window) {
              
         
             
-
+        }
 
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
         
@@ -143,7 +146,7 @@ var init = function (window) {
         game.update = update;
         
         app.addUpdateable(window.opspark.game);
-    }
+    
 };
 
 // DO NOT REMOVE THIS CODE //////////////////////////////////////////////////////
