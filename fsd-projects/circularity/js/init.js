@@ -28,8 +28,6 @@ var init = function (window) {
         // TODO 2 : Create a function that draws a circle 
         
          function drawCircle() {
-
-         
          circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
          physikz.addRandomVelocity(circle, canvas, 5, 5);
          view.addChild(circle);
@@ -38,18 +36,18 @@ var init = function (window) {
 
         // TODO 3 : Call the drawCircle() function
         
-        drawCircle()
-        drawCircle()
-        drawCircle()
-        drawCircle()
-        drawCircle()
-        
+                // drawCircle()
+                // drawCircle()
+                // drawCircle()
+                // drawCircle()
+                // drawCircle()
+                
 
 
         // TODO 7 : Use a loop to create multiple circles
 
-        for (var i = 0; i < 25; i++) {
-          functionName; drawCircle
+        for (var i = 0; i < 100; i++) {
+         drawCircle()
         }
         
 
@@ -71,7 +69,7 @@ var init = function (window) {
             // physikz.updatePosition(circles[2]);
             // physikz.updatePosition(circles[3]);
             // physikz.updatePosition(circles[4]);
-             }
+             
 
             
             // TODO 5 : Call game.checkCirclePosition() on your circles
@@ -89,10 +87,8 @@ var init = function (window) {
             physikz.updatePosition(circles[i]);
             game.checkCirclePosition(circles[i]);
           }
-            
-           for (var i = 0; i < circles.length; i++) {
-            circles[i]
-          }
+        } 
+
     
         
           /* 
@@ -121,6 +117,9 @@ var init = function (window) {
             } 
                
                 
+            if (circle.x < 0){
+               circle.x = canvas.height
+            }
 
             
              
