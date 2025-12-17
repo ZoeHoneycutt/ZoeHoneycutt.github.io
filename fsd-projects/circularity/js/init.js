@@ -47,7 +47,7 @@ var init = function (window) {
         // TODO 7 : Use a loop to create multiple circles
 
         for (var i = 0; i < 100; i++) {
-         drawCircle()
+         drawCircle();
         }
         
 
@@ -88,7 +88,7 @@ var init = function (window) {
             game.checkCirclePosition(circles[i]);
           }
         
-
+        }
     
         
           /* 
@@ -105,30 +105,30 @@ var init = function (window) {
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
             
             
-            
+            if (circle.x < 0) {
+              circle.x = canvas.width;
+             }
+
+
+             if (circle.x > canvas.width) {
+                circle.x = 0;
+            }
+
+
+             if (circle.y < 0) {
+                circle.y = canvas.height;
+            }
+
             if (circle.y > canvas.height) {
-                circle.y = 0; 
+                circle.y = 0;
             }
             
-            if (circle.x < 0 ) {
-                circle.x = canvas.width
-
-            }
-
-            if (circle.y < 0) {
-               circle.y = canvas.height
-            } 
-               
-                
-            if (circle.x < 0){
-               circle.x = canvas.height
-            }
-
+         
             
              
         
             
-        }
+        
 
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
         
@@ -148,7 +148,8 @@ var init = function (window) {
         app.addUpdateable(window.opspark.game);
  }
 }
-};
+}
+
 
 // DO NOT REMOVE THIS CODE //////////////////////////////////////////////////////
 if ((typeof process !== 'undefined') &&
