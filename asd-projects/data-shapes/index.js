@@ -35,16 +35,21 @@ $(document).ready(function () {
   /////////////////////////////////////////////////
 
   // TODO 1: create a new shape object and add it to the array
-  var shape () {
-    key: color, value: "blue"
-    key: shape, value: "circle"
-    key: repeat, value: 3
+  
+    // TODO 0 complete
+    
+    var shape = {
+      key : color, value "blue"
+      key : shape, value : "circle"
+      key : repeat, value : 3
 
-  };
+    }
+
+    dataShapes.push(shape);
 
   // TODO 2: add a new property to all data shapes
 
-  for (let i = 0; dataShapes.length; i++){
+  for (i = 0; i < dataShapes.length; i++) {
     let currentShape = dataShapes[i];
 
     if (currentShape.color === "red") {
@@ -92,6 +97,10 @@ $(document).ready(function () {
   function goodDisplay() {
     // TODO 4-b: call your handleGood function
     
+   let currentShape = dataShapes[currentIndex]; {
+    
+    handleGood(currentShape.color, currentShape.shape, currentShape.repeat);
+   
   }
 
   function badDisplay() {
