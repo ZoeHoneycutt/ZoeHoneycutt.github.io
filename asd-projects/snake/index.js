@@ -76,7 +76,7 @@ updateInterval = setInterval(update, 100);
 */
 function update() {
  // TODO 6, Part 2: Fill in the update function's code block
-  if (started) {
+  if (started) { 
     moveSnake();
 
     if (hasHitWall() || hasCollidedWithSnake()) {
