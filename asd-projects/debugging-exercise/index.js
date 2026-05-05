@@ -66,7 +66,7 @@ function makeGhost(id) {
     "#fff",
     "#fa0",
     "#0a0",
-    "#a0f"
+    "#a0f",
   ];
   ghost.color = colors[Math.floor(Math.random() * colors.length)];
 
@@ -86,11 +86,11 @@ function getId(number) {
 // this adds a ghost into the HTML
 function addNewGhostElement(ghost, id) {
   // this creates the HTML for a new ghost element
-  var ghost = $("<img>")
+  var $ghost = $("<img>")
     .attr("id", id)
     .attr("src", "img/ghost.png")
     .css("left", ghost.x)
-    var ghost = ghosts[i];
+    .css("top", ghost.y)
     .addClass("ghost");
 
   // this inserts the ghost's HTML into your website
@@ -107,7 +107,7 @@ function update() {
   // to make seeing issues in the debugger slightly easier (in practice, you should use
   // ghosts.length, but do NOT change it here)
   for (var i = 0; i < maxGhosts; i++) {
-    var ghost = ghosts[j];
+    var ghost = ghosts[i];
 
     // move the ghost
     moveGhost(ghost);
@@ -136,7 +136,7 @@ function moveGhost(ghost) {
 // this bounces ghosts if they hit a wall
 function bounceGhost(ghost) {
   // this bounces off the left wall
-  if (ghost.x < 0) {
+  if (ghost.x < 0){
     ghost.x -= ghost.speedX;
     ghost.speedX *= -1;
   }
